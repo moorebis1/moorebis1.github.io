@@ -1,10 +1,5 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>
-            Welcome to my page!
-        </title>
-    </head>
     <body>
         <h2> Welcome to my page!</h2>
         <h3>Please feel free to browse my portfolio:</h3>
