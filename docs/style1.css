@@ -3,10 +3,6 @@ html {
     scroll-behavior: smooth;
   }
 
-  .body {
-    background: #17599b;
-    font-family: "Oswald", sans-serif;
-  }
   
   /* Main Heading Font */
   .m-heading {
