@@ -1,99 +1,128 @@
-<!--
-    C:\Users\ibmoo\Documents\GitHub\moorebis1.github.io
-    Website File Path
--->
 
+<!--FILE PATH: C:\Users\ibmoo\Documents\GitHub\moorebis1.github.io-->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="images\favicon.ico">
 
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    />
+    <head>
 
-    <!-- Bootstrap Js -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <link rel="icon" type="image/x-icon" href="images\favicon.ico"> <!--favicon icon-->
+        <meta name="viewport" content="width=device-width, intital-scale=1.00" /> <!--mobile responsive-->
+        <meta charset="UTF-8" /> <!--specifies character encoding as UTF-8-->
 
-    <!-- My CSS -->
-    <link rel="stylesheet" href="style.css" />
+<!--TAB TITLE-->
 
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/996973c893.js"></script>
+        <title> Isaac B. Moore: My Portfolio </title>
 
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700;800&family=Roboto+Slab:wght@200;400;600;900&display=swap"
-      rel="stylesheet"
-    />
+<!--CSS STYLE SHEET-->
 
-    <title>My Portfolio</title>
-  </head>
-  <body>
-    <div class="container navigation pt-3">
-      <div class="row">
-        <div class="col-6 d-flex justify-content-start align-items-center">
-          <i class="fas fa-code fa-2x text-warning pb-3"></i>
-          <h5 class="d-inline pl-2 text-white">Portfolio</h5>
+    <link rel="stylesheet" href="style.css"/> <!--links external css style sheet-->
+
+<!--FONT SETTINGS-->
+
+        <script src="https://kit.fontawesome.com/996973c893.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather"/>
+        <style>
+            .z1 {font-family:"Merriweather";font-size: 22px;}
+            .z2 {font-family:"Roboto Slab", serif;}
+            .z3 {font-family: "Oswald", sans-serif;}
+        </style>
+
+<!--SLIDES SETTINGS-->
+        <style>
+            .responsive-google-slides {
+                position: relative;
+                padding-bottom: 56.25%; /* 16:9 Ratio */
+                height: 0;
+                overflow: hidden;
+            }
+            .responsive-google-slides iframe {
+                border: 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+
+<!--CSS BOOTSTRAP-->
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" /> <!--css format sheet--> 
+        
+<!--JAVASCRIPT BOOTSTRAP-->
+
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> <!--1st js format sheet-->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> <!--2nd js format sheet-->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script> <!--3rd js format sheet-->
+
+    </head> 
+
+    <body>
+
+<!--HEADER-->
+
+            <!--TOP LEFT "HOME" BUTTON-->
+
+        <div class="container navigation pt-3">
+            <div class="row">
+                <div class="col-6 d-flex justify-content-start align-items-center"> <!--Alignment-->
+                    <i class="fas fa-code fa-2x text-warning pb-3"></i>
+                    <h5 class="d-inline pl-2 text-white">Isaac B. Moore</h5>
+                </div>
+
+            <!--ABOUT ME BUTTON-->
+
+                <div class="col-6 pt-2">
+                  <div class="row test-center p-0 d-flex justify-content-end align-items-center"> <!--Alignment-->
+                    <div class="col-3">
+                        <a href="#about" class="text-white navigation-link">About Me</a> <!--Header Button-->
+                    </div>
+
+            <!--PROJECTS BUTTON-->
+
+                    <div class="col-3">
+                        <a href="#projects" class="text-white navigation-link">Projects</a> <!--Header Button-->
+                    </div>
+
+            <!--RESUME BUTTON-->
+
+                    <div class="col-3">
+                        <a href="Documents/resume.pdf" target="_blank" class="text-white navigation-link">Resume</a> <!--Header Button-->
+                    </div>
+
+            <!--CONTACT ME BUTTON-->
+
+                    <div class="col-3">
+                        <a href="#contact-me" class="texr-white navigation-link">Contact Me</a> <!--Header Button-->
+                    </div>
+
+                </div>
+            </div>
         </div>
-        <div class="col-6 pt-2">
-          <div
-            class="row text-center p-0 d-flex justify-content-end align-items-center"
-          >
-            <div class="col-3">
-              <a href="#about" class="text-white navigation-link">About</a>
-            </div>
-            <div class="col-3">
-              <a href="#projects" class="text-white navigation-link"
-                >Projects</a
-              >
-            </div>
-            <div class="col-3">
-              <a href="#social-media" class="text-white navigation-link"
-                >Social Media</a
-              >
-            </div>
-            <div class="col-3">
-              <a
-                href="Documents/resume.pdf"
-                target="_blank"
-                class="text-white navigation-link"
-                >Resume</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
 
-    <!-- Main Container -->
+
+<!--MAIN SECTION-->
+
     <div class="main-container container">
-      <div class="row main_row">
-        <div class="col-6">
-          <h2 class="text-white">Hello! My name is </h2>
-          <h1 class="text-warning m-heading">Isaac Moore</h1>
-          <h2 class="text-white">Welcome to my portfolio!</h2>
+        <div class="row main_row">
+            <div class="col-6">
+                <h2 class="text-white"> Hello! My name is </h2> <!--Main Page Text: First Line-->
+                <h1 class="text-warning m-heading"> Isaac Moore </h1> <!--Main Page Text: Second Line-->
+                <h2 class="text-white"> Welcome to my portfolio! </h2> <!--Main Page Text: Third Line-->
+            </div>
+            <div class="col-6">
+                <img src="images\ReadyPlayerMe-Avatar.png" class="img-fluid"/> <!--Main Page Avatar Image-->
+            </div>
         </div>
-        <div class="col-6">
-          <img
-            src="images\ReadyPlayerMe-Avatar.png"
-            class="img-fluid"
-          />
-        </div>
-      </div>
     </div>
 
-    <!-- About Section -->
+<!--ABOUT ME SECTION-->
+
     <div id="about" class="container about p-5">
-      <div class="row">
-        <div class="col-6">
-         <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSVw0etHVw_t5sMb1-Nn3ntUxBUK-uV_IQgWzraRRNZKYAcRFnlQjzvdMVoChbijQpF6gnI5C5qKi-r/embed?start=true&loop=true&delayms=5000&amp;rm=minimal" frameborder="0" width="520" height="380" allowfullscreen="false" mozallowfullscreen="false" webkitallowfullscreen="false"></iframe>
+        <div class="row">
+            <div class="col-6 responsive-google-slides"> <!--auto-formats to fill frame-->
+                <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSVw0etHVw_t5sMb1-Nn3ntUxBUK-uV_IQgWzraRRNZKYAcRFnlQjzvdMVoChbijQpF6gnI5C5qKi-r/embed?start=true&loop=true&delayms=8000&amp;rm=minimal"></iframe>
         </div>
         <div class="col-6 pl-5 pt-5 pb-5 text-white">
           <h3 class="text-warning">About Me</h3>
@@ -110,128 +139,106 @@
       </div>
     </div>
 
-    <!-- Projects Section -->
+<!--PROJECTS SECTION-->
+
     <div id="projects" class="container mt-5 pt-5">
-      <h1 class="text-warning mb-3 pb-2">My Projects</h1>
+      <h1 class="text-warning mb-3 pb-2"> My Projects </h1>
       <div class="row">
+
+        <!--PROJECT ONE-->
+
         <div class="col-4 mb-5">
           <div class="card" style="width: 18rem;">
-            <img
-              src="images\undraw_designer_re_5v95.svg"
-              class="card-img-top"
-              style="height: 13rem;"
-              alt="..."
-            />
+            <img src="images\undraw_designer_re_5v95.svg" class="card-img-top" style="height: 13rem;" alt="..."/>
             <div class="card-body">
-              <h5 class="card-title">Sikosrsky S64 CAD Design Project</h5>
-              <p class="card-text">
-                Designed using SOLIDWORKS 2022, this model contains over 800 components to create a visually working replica. 
-              </p>
-              <a href="#" class="btn btn-warning">See Project</a>
+              <h5 class="card-title"> Sikosrsky S64 CAD Design Project </h5>
+              <p class="card-text"> Designed using SOLIDWORKS 2022, this model contains over 800 components to create a visually working replica. </p>
+              <a href="#" class="btn btn-warning"> See Project </a>
             </div>
           </div>
         </div>
+
+        <!--PROJECT TWO-->
+
         <div class="col-4 mb-5">
           <div class="card" style="width: 18rem;">
-            <img
-              src="images\undraw_programming_re_kg9v.svg"
-              class="card-img-top img-fluid"
-              alt="..."
-              style="height: 13rem;"
-            />
+            <img src="images\undraw_programming_re_kg9v.svg" class="card-img-top img-fluid" alt="..." style="height: 13rem;"/>
             <div class="card-body">
-              <h5 class="card-title">Bottle Deposit Module</h5>
-              <p class="card-text">
-                Arduino, ESP32 and Servo's were integrated to dispense change for recycled bottles, with the back-end running on C++, OpenCV and NumPy.
-              </p>
-              <a href="#" class="btn btn-warning">See Project</a>
+              <h5 class="card-title"> Bottle Deposit Module </h5>
+              <p class="card-text"> Arduino, ESP32 and Servo's were integrated to dispense change for recycled bottles, with the back-end running on C++, OpenCV and NumPy. </p>
+              <a href="#" class="btn btn-warning"> See Project </a>
             </div>
           </div>
         </div>
+
+        <!--PROJECT THREE-->
+
         <div class="col-4 mb-5">
           <div class="card" style="width: 18rem;">
-            <img
-              src="images/tictactoe.svg.svg"
-              class="card-img-top"
-              alt="..."
-              style="height: 13rem;"
-            />
+            <img src="images/tictactoe.svg.svg" class="card-img-top" alt="..." style="height: 13rem;"/>
             <div class="card-body">
-              <h5 class="card-title">Tic-Tac-Toe</h5>
-              <p class="card-text">
-                Developed using C++, this classic game tests the developers knowledge of algorithms, booleans and arrays. 
-              </p>
-              <a href="#" class="btn btn-warning">See Project</a>
+              <h5 class="card-title"> Tic-Tac-Toe </h5>
+              <p class="card-text"> Developed using C++, this classic game tests developers knowledge of algorithms, booleans and arrays. </p>
+              <a href="#" class="btn btn-warning"> See Project </a>
             </div>
           </div>
         </div>
+
+        <!--PROJECT FOUR-->
+
         <div class="col-4 mb-5">
           <div class="card" style="width: 18rem;">
-            <img
-              src="images/snake.svg"
-              class="card-img-top"
-              alt="..."
-              style="height: 13rem;"
-            />
+            <img src="images/snake.svg" class="card-img-top" alt="..." style="height: 13rem;"/>
             <div class="card-body">
               <h5 class="card-title">Snake</h5>
-              <p class="card-text">
-                This late 90's game was programmed using Python with HTML and CSS controlling the formatting.
-              </p>
-              <a href="#" class="btn btn-warning">See Project</a>
+              <p class="card-text"> This late 90's game was programmed using Python with HTML and CSS controlling the formatting. </p>
+              <a href="#" class="btn btn-warning"> See Project </a>
             </div>
           </div>
         </div>
+
+        <!--PROJECT FIVE-->
+
         <div class="col-4 mb-5">
           <div class="card" style="width: 18rem;">
-            <img
-              src="./images/photography.svg"
-              class="card-img-top"
-              alt="..."
-              style="height: 13rem;"
-            />
+            <img src="./images/photography.svg" class="card-img-top" alt="..." style="height: 13rem;"/>
             <div class="card-body">
-              <h5 class="card-title">Photography Platform</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-warning">See Project</a>
+              <h5 class="card-title"> Project Five </h5>
+              <p class="card-text"> Some quick example text to build on the card title and make up the bulk of the card's content. </p>
+              <a href="#" class="btn btn-warning"> See Project </a>
             </div>
           </div>
         </div>
+
+        <!--PROJECT SIX-->
+
         <div class="col-4 mb-5">
           <div class="card" style="width: 18rem;">
-            <img
-              src="./images/web_scraping.svg"
-              class="card-img-top"
-              alt="..."
-              style="height: 13rem;"
-            />
+            <img src="./images/web_scraping.svg" class="card-img-top" alt="..." style="height: 13rem;"/>
             <div class="card-body">
-              <h5 class="card-title">Manga Scraping Web App</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-warning">See Project</a>
+              <h5 class="card-title"> Project Six </h5>
+              <p class="card-text"> Some quick example text to build on the card title and make up the bulk of the card's content. </p>
+              <a href="#" class="btn btn-warning"> See Project </a>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Social Media Section -->
+<!--CONTACTS SECTION-->
+
     <div id="social-media" class="container-fluid">
       <div class="container text-white py-5">
-        <h4 class="text-warning">Social Media</h4>
-        <h1 class="m-heading">Let's be friends</h1>
+        <h2 class="text-warning"> Contact Me! </h2>
         <div class="row pt-5">
+
+        <!--LINKEDIN BUTTON-->
+
           <div class="col-3 media_link btn" href="#">
             <div class="row">
-              <div class="col-6 d-flex justify-content-start">
+              <div class="col-6 d-flex justify-content-start mx-auto">
                 <h3>
-                    <a class="m-0 pt-2 text-white" href="https://www.linkedin.com/in/isaac-moore-940074257" class="btn btn-warning">LinkedIn</a>
+                    <a class="m-0 pt-2 text-white" href="https://www.linkedin.com/in/isaac-moore-940074257" class="btn btn-warning"> LinkedIn </a>
                 </h3>
               </div>
               <div class="col-6 d-flex justify-content-end align-items-center">
@@ -240,11 +247,13 @@
             </div>
           </div>
 
+        <!--GITHUB BUTTON-->
+
           <div class="col-3 media_link btn">
             <div class="row">
-              <div class="col-6 d-flex justify-content-start">
+              <div class="col-6 d-flex justify-content-start align-items-center">
                 <h3>
-                    <a class="m-0 pt-2 text-white" href="https://github.com/moorebis1" class="btn btn-warning">Github</a>
+                    <a class="m-0 pt-2 text-white" href="https://github.com/moorebis1" class="btn btn-warning"> Github </a>
                 </h3>
               </div>
               <div class="col-6 d-flex justify-content-end align-items-center">
@@ -252,22 +261,30 @@
               </div>
             </div>
           </div>
+        
+        <!--INSTAGRAM BUTTON-->
 
           <div class="col-3 media_link btn">
             <div class="row">
-              <div class="col-6 d-flex justify-content-start">
-                <h3 class="m-0 pt-2 text-white">Youtube</h3>
+              <div class="col-6 d-flex justify-content-start align-items-center">
+                <h3>
+                    <a class="m-0 pt-2 text-white" href="https://www.instagram.com/isaac.m00re/" class="btn btn-warning"> Instagram </a>
+                </h3>
               </div>
               <div class="col-6 d-flex justify-content-end align-items-center">
-                <i class="fab fa-youtube fa-2x text-secondary"></i>
+                <i class="fab fa-instagram fa-2x text-secondary"></i>
               </div>
             </div>
           </div>
 
+        <!--EMAIL BUTTON-->
+
           <div class="col-3 media_link bg-warning btn">
             <div class="row">
-              <div class="col-6 d-flex justify-content-start">
-                <h3 class="m-0 pt-2 text-dark">Email</h3>
+              <div class="col-6 d-flex justify-content-start align-items-center">
+                <h3>
+                    <a class="m-0 pt-2 text-white" href="mailto:moorebisaac@gmail.com" class="btn btn-warning"> Email </a>
+                </h3>
               </div>
               <div class="col-6 d-flex justify-content-end align-items-center">
                 <i class="fas fa-envelope fa-2x text-secondary"></i>
@@ -278,11 +295,13 @@
       </div>
     </div>
 
-    <!-- Footer -->
-    <--footer>
+  
+<!--FOOTER SECTION-->
+        
+    <footer>
       <div class="container text-muted text-center py-3 mt-5">
         <h5> Isaac B. Moore <h5>
       </div>
-    </footer-->
+    </footer>
   </body>
 </html>
