@@ -9,4 +9,30 @@
         <title> Tic-Tac-Toe </title>
         
     </head>
+    <body>
+        <script src="JSCPP.es5.min.js"></script>
+        <script type="text/javascript">
+	    var code = 	"#include <iostream>"+
+				"using namespace std;"+
+				"int main() {"+
+				"    int a;"+
+				"    cin >> a;"+
+				"    cout << a << endl;"+
+				"    return 0;"+
+				"}"
+	    ;
+	    var input = "4321";
+	    var output = "";
+	    var config = {
+		    stdio: {
+			    write: function(s) {
+				    output += s;
+			    }
+		    },
+		    unsigned_overflow: "error" // can be "error"(default), "warn" or "ignore"
+	    };
+	    var exitCode = JSCPP.run(code, input, config);
+	    alert(output + "\nprogram exited with code " + exitCode);
+        </script>
+    </body>
 </html>
