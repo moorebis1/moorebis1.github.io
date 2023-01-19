@@ -3,7 +3,7 @@ html {
     scroll-behavior: smooth;
   }
 
-  body {
+  .body {
     background: #17599b;
     font-family: "Oswald", sans-serif;
   }
