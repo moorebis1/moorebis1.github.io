@@ -63,6 +63,23 @@ function createRect(x,y,width, height,color) {
     canvasContext.fillRect(x, y, width, height)
 }
 
+var keys = {};
+window.addEventListener("keydown",
+    function(e){
+        keys[e.code] = true;
+        switch(e.code){
+            case "ArrowUp": case "ArrowDown": case "ArrowLeft": case "ArrowRight":
+            case "Space": e.preventDefault(); break;
+            default: break; // do not block other keys
+        }
+    },
+false);
+window.addEventListener('keyup',
+    function(e){
+        keys[e.code] = false;
+    },
+false);
+
 window.addEventListener("keydown", (event) => {
     setTimeout(() => {
         if (event.keyCode == 37 && snake.rotateX != 1) {
