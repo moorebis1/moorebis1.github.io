@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-char square[10] = {'o','1','2','3','4','5','6','7','8','9'};
+char square[10] = {'o','1','2','3','4','5','6','7','8','9'}; //creates character values for squares on the board
 
 int status();
 void game();
@@ -10,7 +10,7 @@ int main()
 {
     int player = 1,i,choice;
 
-    char xo;
+    char xo; //creates a character value for marking 
     do
     {
         game();
@@ -19,12 +19,12 @@ int main()
         cout << "Player " << player << ", enter a number:  ";
         cin >> choice;
 
-        xo = (player == 1) ? 'X' : 'O';
+        xo = (player == 1) ? 'X' : 'O'; //if mark is called, check player # and mark accordingly, player 1 = X, player 2, O
 
-        if (choice == 1 && square[1] == '1')
+        if (choice == 1 && square[1] == '1') //if the player chooses 1, and square is unmarked, mark the square 
 
-            square[1] = xo;
-        else if (choice == 2 && square[2] == '2')
+            square[1] = xo; 
+        else if (choice == 2 && square[2] == '2') //the previous line is repeated for all values of the square
 
             square[2] = xo;
         else if (choice == 3 && square[3] == '3')
@@ -50,7 +50,7 @@ int main()
             square[9] = xo;
         else
         {
-            cout<<"Invalid move ";
+            cout<<"Invalid Move "; //if player chooses a number, and the square IS marked, print "Invalid Move"
 
             player--;
             cin.ignore();
@@ -59,7 +59,7 @@ int main()
         i=status(); //after every move 'i' occurs and the int status() protocol is started
 
         player++;
-    }while(i==-1);
+    }while(i==-1); //when i = 1, the game ends with a winner 
     game();
     if(i==1)
 
@@ -73,7 +73,7 @@ int main()
 }
 
 
-int status()
+int status() //these are all the possible 3 row combinations, i.e. all of the possible "wins"
 {
     if (square[1] == square[2] && square[2] == square[3])
 
@@ -121,8 +121,8 @@ void game() //creates the game board using cout (character out) commands
     cout << endl;
 
     cout << "     |     |     " << endl;
-    cout << "  " << square[1] << "  |  " << square[2] << "  |  " << square[3] << endl;
-
+    cout << "  " << square[1] << "  |  " << square[2] << "  |  " << square[3] << endl; //sets the square number within the squares
+   
     cout << "_____|_____|_____" << endl;
     cout << "     |     |     " << endl;
 
