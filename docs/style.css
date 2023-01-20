@@ -13,12 +13,7 @@ html {
     font-family: "Roboto Slab", serif;
   }
 
-.fluid-navcontainer {
-    display: flex;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 10px;
-}
+
   /* Navigation */
   .navigation-link {
     border: 2px solid transparent;
