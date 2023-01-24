@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" type="image/x-icon" href="images\favicon.ico"/>
 
-        <link rel="stylesheet" href="style.css"/> 
+        <link rel="stylesheet" href="stylesub.css"/> 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
     
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
@@ -21,14 +21,45 @@
     </head>
 
     <div style="background-color:#1f2235">
-        <body>
-            <div class="container navigation pt-3">
-                <div class="col-6 d-flex justify-content-start align-items-center">
-                    <i><a href="index.html" class="fas fa-tasks fa-2x text-warning pb-3"></a></i> <!--left corner icon-->
-                    <h5 class="d-inline pl-2 text-white">Isaac B. Moore</h5>
-                </div>
+<body>
+
+<!--Navigation Bar-->
+
+    <div class="container navigation pt-3">
+        <div class="row">
+          <div class="col-6 d-flex justify-content-start align-items-center"> 
+            <i><a href="index.html" class="fas fa-tasks fa-2x text-warning pb-3"></a></i> <!--left corner icon-->
+            <h5 class="d-inline pl-2 text-white">Isaac B. Moore</h5>
+          </div>
+          <div class="col-6 pt-2"> <!--column 6, padding-top = 2 (0.5)-->
+            <div
+              class="row text-center p-0 d-flex justify-content-end align-items-center"
+            >
+              <div class="col-3">
+                <a href="#about" class="text-white navigation-link">About</a> <!--About Nav Button-->
+              </div>
+              <div class="col-3">
+                <a href="#projects" class="text-white navigation-link">Projects</a> <!--Projects Nav Button-->
+              </div>
+              <div class="col-3">
+                <a href="#social-media" class="text-white navigation-link">Contact Me</a> <!--Contacts Nav Button-->
+              </div>
+              <div class="col-3">
+                <a
+                  href="Documents/resume.pdf"
+                  target="_blank"
+                  class="text-white navigation-link"
+                  >Resume</a
+                >
+              </div>
             </div>
-    
+          </div>
+        </div>
+      </div>
+
+
+    <!--Game Canvas-->
+
             <div class="main-container container">
                 <div class="row main_row align-items-center">
                     <div class="col-6">
@@ -36,8 +67,9 @@
                         <script src="snake.js"></script>
                     </div>
                 </div>
-    
-            </body>
+
+    <!--Project Description-->
+</body>
     </div>
         
 
