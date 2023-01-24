@@ -27,30 +27,17 @@
 
     <div class="container navigation pt-3">
         <div class="row">
-          <div class="col-6 d-flex justify-content-start align-items-center"> 
+          <div class="col-8 d-flex justify-content-start align-items-center"> 
             <i><a href="index.html" class="fas fa-tasks fa-2x text-warning pb-3"></a></i> <!--left corner icon-->
             <h5 class="d-inline pl-2 text-white">Isaac B. Moore</h5>
           </div>
-          <div class="col-6 pt-2"> <!--column 6, padding-top = 2 (0.5)-->
-            <div
-              class="row text-center p-0 d-flex justify-content-end align-items-center"
-            >
-              <div class="col-3">
-                <a href="#about" class="text-white navigation-link">About</a> <!--About Nav Button-->
+          <div class="col-4 pt-2"> <!--column 6, padding-top = 2 (0.5)-->
+            <div class="row text-center p-0 d-flex justify-content-end align-items-center">
+              <div class="col-6">
+                <a href="#overview" class="text-white navigation-link">Project Overview</a> <!--Details Nav Button-->
               </div>
-              <div class="col-3">
-                <a href="#projects" class="text-white navigation-link">Projects</a> <!--Projects Nav Button-->
-              </div>
-              <div class="col-3">
-                <a href="#social-media" class="text-white navigation-link">Contact Me</a> <!--Contacts Nav Button-->
-              </div>
-              <div class="col-3">
-                <a
-                  href="Documents/resume.pdf"
-                  target="_blank"
-                  class="text-white navigation-link"
-                  >Resume</a
-                >
+              <div class="col-6">
+                <a href="#contact" class="text-white navigation-link">Contact Me</a> <!--Contacts Nav Button-->
               </div>
             </div>
           </div>
@@ -60,15 +47,27 @@
 
     <!--Game Canvas-->
 
-            <div class="main-container container">
-                <div class="row main_row align-items-center">
-                    <div class="col-6">
-                        <canvas id="canvas" width="600" height="600"></canvas>
-                        <script src="snake.js"></script>
+            <div class="container">
+                <div class="row">
+                  <div class= "col-9 justify-content-center align-items-center">
+                    <canvas id="canvas" width="600" height="600"></canvas>
+                      <script src="snake.js"></script>
+                    <div id="overview" class="col-3">
+                      <div class="col-8 justify-content-end">
+                        <h6 class="text-white"> Project Overview </h6>
+                      </div>
+                      <div class="col-10 justify-content-center align-items-center">
+                        <p>
+                          The snake game grew to popularity in 1998 after being included on Nokia mobile phones.
+                        </p>
+                      </div>
                     </div>
+                  </div>
                 </div>
+              </div>
 
-    <!--Project Description-->
+</div>
+
 </body>
     </div>
         
